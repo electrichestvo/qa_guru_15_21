@@ -6,14 +6,14 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
 import static helpers.CustomApiListener.withCustomTemplates;
-import static tests.BaseTest.credentialsConfig;
+import static tests.BaseTest.loginConfig;
 import static api.AuthorizationApi.ALLURE_TESTOPS_SESSION;
 
 public class LoginSpecs {
 
-    public final static String USERNAME = credentialsConfig.username();
-    public final static String PASSWORD = credentialsConfig.password();
-    public final static String TOKEN = credentialsConfig.token();
+    public final static String USERNAME = loginConfig.username();
+    public final static String PASSWORD = loginConfig.password();
+    public final static String TOKEN = loginConfig.token();
 
     public static RequestSpecification getRequestSpec() {
 

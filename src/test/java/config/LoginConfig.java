@@ -2,8 +2,8 @@ package config;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources("classpath:credentials.properties")
-public interface CredentialsConfig extends Config {
+@Config.Sources("classpath:testdata.properties")
+public interface LoginConfig extends Config {
     String username();
 
     String password();

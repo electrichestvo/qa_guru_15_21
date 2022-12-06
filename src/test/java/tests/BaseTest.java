@@ -1,7 +1,7 @@
 package tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
-import config.CredentialsConfig;
+import config.LoginConfig;
 import config.WebDriverProvider;
 import helpers.Attachments;
 import org.aeonbits.owner.ConfigFactory;
@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeAll;
 
 public class BaseTest {
 
-    public static CredentialsConfig credentialsConfig = ConfigFactory.create(CredentialsConfig.class);
+    public static LoginConfig loginConfig = ConfigFactory.create(LoginConfig.class);
 
     @BeforeAll
     static void setUp() {
